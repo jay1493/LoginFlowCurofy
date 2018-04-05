@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/otp_background"
+    android:layout_marginEnd="@dimen/d10"
+    android:layout_marginStart="@dimen/d10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d10"
+        android:text="@string/verify_mobile"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_18"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_otp_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:text="@string/we_have_sent_a_verification_code_on_your_number"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_15"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d10"
+        android:text="@string/enter_the_verification_code"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_12"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginStart="@dimen/d15"
+        android:layout_marginTop="@dimen/d5">
+
+        <EditText
+            android:id="@+id/et_otp_input_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/otp_et_bg"
+            android:padding="@dimen/d20"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/black"
+            android:maxLength="1"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/et_otp_input_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/otp_et_bg"
+            android:padding="@dimen/d20"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/black"
+            android:maxLength="1"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/et_otp_input_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/otp_et_bg"
+            android:padding="@dimen/d20"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/black"
+            android:maxLength="1"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/et_otp_input_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/otp_et_bg"
+            android:padding="@dimen/d20"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/black"
+            android:maxLength="1"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:text="@string/resend_code"
+        android:enabled="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_15"
+        android:drawableStart="@drawable/resend"
+        android:drawablePadding="@dimen/d10"
+        android:padding="@dimen/d10"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle=""/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_call_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d25"
+            android:layout_marginEnd="@dimen/d25"
+            android:layout_marginTop="@dimen/d10"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/call_me"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/otp_progressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:text="@string/if_you_do_not_receive_an_sms_in_50_second_tap_here_to_receive_verification_code_from_voice_call"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_12"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle=""/>
+
+</LinearLayout>

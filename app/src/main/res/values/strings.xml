@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Curofy</string>
+    <string name="sign_in">Sign In</string>
+    <string name="select_country">Select Country</string>
+    <string name="_91">+91</string>
+    <string name="enter_phone_no">Enter your mobile no.</string>
+    <string name="india">India</string>
+    <string name="get_started">Get Started</string>
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="we_have_sent_a_verification_code_on_your_number" formatted="false">We have sent a verification code on your number: %s</string>
+    <string name="enter_the_verification_code">Enter the verification code</string>
+    <string name="resend_code">RESEND CODE</string>
+    <string name="call_me">Call Me</string>
+    <string name="if_you_do_not_receive_an_sms_in_50_second_tap_here_to_receive_verification_code_from_voice_call">If you do not receive an SMS in 50 Second tap here to receive verification code from voice call.</string>
+    <string name="countries">Countries:</string>
+    <string name="contact_no_cannot_be_left_empty">Contact no. cannot be left empty.</string>
+    <string name="invalid_contact_no">Invalid contact no.</string>
+    <string name="network_failure_try_again">Network failure, try again later!</string>
+    <string name="invalid_request_try_again">Invalid request, please try again with all fields.</string>
+    <string name="verify">Verify !</string>
+
+    <!-- Arrays -->
+    <string-array name="countries">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>China</item>
+    </string-array>
+
+    <string-array name="countryCodes">
+        <item>+91</item>
+        <item>+92</item>
+        <item>+86</item>
+    </string-array>
+
+    <!-- END -->
+
+</resources>

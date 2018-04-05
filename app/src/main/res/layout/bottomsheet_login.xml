@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="@dimen/d5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/d25"
+        android:layout_marginStart="@dimen/d25"
+        android:layout_marginTop="@dimen/d20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_country_selection"
+            android:drawablePadding="@dimen/d5"
+            android:drawableEnd="@drawable/tv_bg_shape"
+            android:hint="@string/select_country"
+            android:text="@string/india"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/d5"
+            android:background="@drawable/bg_login_text_views"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="@dimen/d15">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_country_code_selection"
+                android:clickable="false"
+                android:drawableEnd="@drawable/tv_bg_shape"
+                android:hint="@string/_91"
+                android:text="@string/_91"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/d10"
+                android:background="@drawable/bg_login_text_views"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_phone_no"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/et_dark_green_cursor"
+                android:hint="@string/enter_phone_no"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/d15"
+                android:layout_marginStart="@dimen/d5"
+                android:background="@drawable/bg_login_text_views"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_signIn"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/d5"
+                android:text="@string/get_started"
+                android:textColor="@color/white"
+                android:background="@color/lightGreen"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signIn_progressBar"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginStart="@dimen/d10"
+            android:layout_marginEnd="@dimen/d10"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_12"
+            android:text="Accept the Terms and Conditions, and Privacy Policy"/>
+
+    </LinearLayout>
+
+</LinearLayout>
